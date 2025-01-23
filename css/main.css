@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+:root {
+  --cyan: #2AB3B1;
+  --cyanLight: #4BBFBD;
+  --brightYellow: #C0DF33;
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+  --white: #fff;
+  --regular: 400;
+  --bold: 700;
+  --font: "Karla", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+h1 {
+  font-size: 20px;
+}
+@media (min-width: 1260px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-size: 18px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: var(--font);
+  background-color: var(--lightGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  width: 90%;
+  max-width: 635px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 81, 171, 0.15);
+  display: grid;
+  grid-template-areas: "col_01" "col_02" "col_03";
+}
+@media (min-width: 1260px) {
+  main {
+    grid-template-areas: "col_01 col_01" "col_02 col_03";
+  }
+}
+main .container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .section__top {
+  grid-area: col_01;
+  background-color: var(--white);
+}
+main .section__top h1 {
+  margin-bottom: 24px;
+  color: var(--cyan);
+}
+main .section__top h2 {
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: var(--brightYellow);
+}
+@media (min-width: 1260px) {
+  main .section__top h2 {
+    font-size: 18px;
+    margin-bottom: 11px;
+  }
+}
+main .section__top p {
+  color: var(--grayishBlue);
+  line-height: 26px;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (min-width: 1260px) {
+  main .section__top p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+main .section__right {
+  grid-area: col_02;
+  background-color: var(--cyan);
+  color: var(--white);
+}
+main .section__right h2 {
+  margin-bottom: 18px;
+}
+main .section__right h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 11px;
+  font-weight: 300;
+}
+main .section__right h3 span {
+  font-weight: var(--bold);
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+main .section__right p {
+  margin-bottom: 26px;
+}
+main .section__right button {
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--brightYellow);
+  padding: 15px;
+  border: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  color: var(--white);
+  font-family: var(--font);
+  font-size: var(--bold);
+}
+main .section__left {
+  grid-area: col_03;
+  background-color: var(--cyanLight);
+  color: var(--white);
+}
+main .section__left h2 {
+  margin-bottom: 18px;
+}
+main .section__left ul li {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+footer {
+  width: 100%;
+  margin: 16px auto 0;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #616161;
+}
+@media (min-width: 1260px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 16px;
+  }
+}
+footer .attribution a {
+  color: #616161;
+}/*# sourceMappingURL=main.css.map */
