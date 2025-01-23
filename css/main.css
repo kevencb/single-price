@@ -126,6 +126,7 @@ main .section__right button {
   color: var(--white);
   font-family: var(--font);
   font-size: var(--bold);
+  cursor: pointer;
 }
 main .section__left {
   grid-area: col_03;
